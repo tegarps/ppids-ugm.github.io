@@ -23,7 +23,17 @@
         "type": "Point",
         "coordinates": [110, -7.3]
       }
-    }
+    }, 
+	{
+      "type": "Feature",
+      "properties": {
+        "nama": "Ridho Ilahi",
+        "alamat": "Pontianak, Kalimantan Barat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.34250, -0.02633]
+      }
 
   ]
 }
