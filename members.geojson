@@ -5,7 +5,6 @@
 
     {
       "type": "Feature",
-
       "properties": {
         "nama": "Dany Puguh Laksono",
         "alamat": "Gresik"
@@ -16,10 +15,9 @@
       }
     }, {
       "type": "Feature",
-
       "properties": {
-        "nama": "Dany Puguh Laksono2",
-        "alamat": "Gresik"
+        "nama": "dummy",
+        "alamat": "antahberantah"
       },
       "geometry": {
         "type": "Point",
