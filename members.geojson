@@ -16,12 +16,12 @@
     }, {
       "type": "Feature",
       "properties": {
-        "nama": "dummy",
-        "alamat": "antahberantah"
+        "nama": "Nurkhalis Rahili",
+        "alamat": "Selong Lombok Timur"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [110, -7.3]
+        "coordinates": [116.52559, -8.90188]
       }
     }
 
