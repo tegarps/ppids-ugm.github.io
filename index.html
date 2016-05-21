@@ -1,9 +1,10 @@
 
 <html>
 <head>
-  <title>A Leaflet map!</title>
+  <title>PPIDS-UGM Academy User Map</title>
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   <link rel="stylesheet" href="MarkerCluster.css" />
+  <link rel="shortcut icon" href="favicon.ico"/>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="leaflet.markercluster.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -26,22 +27,18 @@
   var map = L.map('map').setView([-3, 118], 5);
 
   // load a tile layer
-  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  L.tileLayer('http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
     {
       attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
       attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
       maxZoom: 28
     }).addTo(map);
 
-  $.getJSON("rodents.geojson",function(data){
-    var ratIcon = L.icon({
-      iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',
-      iconSize: [60,50]
-    });
-    var rodents = L.geoJson(data,{
+  $.getJSON("members.geojson",function(data){
+    var members = L.geoJson(data,{
       pointToLayer: function(feature,latlng){
-        var marker = L.marker(latlng,{icon: ratIcon});
-        marker.bindPopup(feature.properties.Location + '<br/>' + feature.properties.OPEN_DT);
+        var marker = L.marker(latlng);
+        marker.bindPopup(feature.properties.nama + '<br/>' + feature.properties.alamat);
         return marker;
       }
     });

@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+
+  "features": [
+
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "nama": "Dany Puguh Laksono",
+        "alamat": "Gresik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-7, 110]
+      }
+    }, {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "nama": "Dany Puguh Laksono2",
+        "alamat": "Gresik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-7.3, 110]
+      }
+    }
+
+  ]
+}
