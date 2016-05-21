@@ -5,18 +5,18 @@
 
     {
       "type": "Feature",
-      "id": 1,
+
       "properties": {
         "nama": "Dany Puguh Laksono",
         "alamat": "Gresik"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [110, -7]
+        "coordinates": [112.65199, -7.16524]
       }
     }, {
       "type": "Feature",
-      "id": 2,
+
       "properties": {
         "nama": "Dany Puguh Laksono2",
         "alamat": "Gresik"
